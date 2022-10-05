@@ -2,10 +2,10 @@ def build_stdin(in_file: str, out_file: str) -> str:
     final = ""
     final += "------------zqhf-oj-v2-spj-start------------\n"
     final += in_file
-    final += '\n' if len(in_file) != 0 and in_file[-1] != '\n' else ''
+    final += '\n' if in_file[-1] != '\n' else ''
     final += "------------zqhf-oj-v2-spj-split------------\n"
     final += out_file
-    final += '\n' if len(in_file) != 0 and out_file[-1] != '\n' else ''
+    final += '\n' if out_file[-1] != '\n' else ''
     final += "------------zqhf-oj-v2-spj-end------------\n"
     return final
 
@@ -29,4 +29,3 @@ def parse_result(stdout: str) -> dict:
         'score': score,
         'message': message
     }
-

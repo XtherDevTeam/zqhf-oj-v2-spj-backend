@@ -17,7 +17,7 @@ std::string _A, _B, _T;
 
 std::stringstream ins, outs;
 
-void spj_result(int8_t status, uint8_t score, const std::string &debug_message) {
+void spj_result(int8_t status, uint32_t score, const std::string &debug_message) {
     std::cout << (int)status << ' ' << (int)score << '\n' << debug_message << std::endl;
     exit(0);
 }
